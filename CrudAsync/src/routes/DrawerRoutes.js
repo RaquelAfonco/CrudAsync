@@ -1,17 +1,17 @@
 
-import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer'
+import React from 'react'
+import StackalunosAsyncStorage from '../screens/alunosAsyncStorage/StackalunoAsyncStorage'
 
-import Home from '../screens/Home'
-import ListaAlunos from '../screens/ListaAlunos/ListaAlunos'
 
 const Drawer = createDrawerNavigator()
 
 export default function DrawerRoutes() {
     return (
         <Drawer.Navigator initialRouteName='Alunos'>
-            <Drawer.Screen name="Home" component={Home} />
-            <Drawer.Screen name="Alunos" component={ListaAlunos} />
+
+            <Drawer.Screen name="AlunosAsyncStorage" component={StackalunosAsyncStorage} />
+
         </Drawer.Navigator>
 
     )
